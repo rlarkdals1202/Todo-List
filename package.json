@@ -9,10 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-input-autosize": "^2.2.4",
+    "clsx": "^2.1.1",
     "ky": "^1.7.5",
     "next": "15.2.4",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-input-autosize": "^3.0.0",
+    "react-textarea-autosize": "^8.5.8",
     "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
