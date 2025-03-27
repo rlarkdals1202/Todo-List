@@ -1,5 +1,10 @@
 import Link from 'next/link';
 
+/**
+ * Global Navigation Bar 컴포넌트입니다.
+ *
+ * 화면 크기에 따라, 로고 이미지를 다르게 보여줍니다.
+ */
 const GlobalNavigationBar = () => {
     return (
         <nav
