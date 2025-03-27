@@ -15,7 +15,7 @@ interface Props {
  * 할 일 상세 정보를 보여주는 컴포넌트입니다.
  */
 const TodoInfo = ({ todoInfo }: Props) => {
-    const [isActive, setIsActive] = useState(false);
+    const [isUpdateButtonActive, setIsUpdateButtonActive] = useState(false);
 
     const [currentTodoInfo, setCurrentTodoInfo] = useState(() => ({
         ...todoInfo,
@@ -53,7 +53,7 @@ const TodoInfo = ({ todoInfo }: Props) => {
     // 할 일 상세 정보가 변경되면, 수정 버튼을 활성화합니다.
     // 기존 내용과 동일하다면, 수정 버튼을 비활성화합니다.
     useEffect(() => {
-        setIsActive(JSON.stringify(currentTodoInfo) !== JSON.stringify(previousTodoInfo));
+        setIsUpdateButtonActive(JSON.stringify(currentTodoInfo) !== JSON.stringify(previousTodoInfo));
     }, [currentTodoInfo]);
 
     return (
@@ -75,7 +75,7 @@ const TodoInfo = ({ todoInfo }: Props) => {
                 <ImageEditor imageUrl={currentTodoInfo.imageUrl} updateImageUrl={updateImageUrl} />
                 <TodoMemo memo={currentTodoInfo.memo} onMemoChange={handleMemoChange} />
             </div>
-            <TodoActions todoInfo={currentTodoInfo} isUpdateButtonActive={isActive} />
+            <TodoActions todoInfo={currentTodoInfo} isUpdateButtonActive={isUpdateButtonActive} />
         </div>
     );
 };
