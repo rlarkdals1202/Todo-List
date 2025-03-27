@@ -6,6 +6,8 @@
     --breakpoint-3xl: 1920px;
 }
 
+@plugin 'tailwind-scrollbar';
+
 * {
     font-family: var(--font-nanum-square), sans-serif;
 }
