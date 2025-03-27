@@ -8,13 +8,13 @@ const changeTodoState = async ({ id, isCompleted }: { id: number; isCompleted: b
         await ky.patch(`${process.env.NEXT_PUBLIC_API_URL}/items/${id}`, {
             json: {
                 isCompleted: !isCompleted,
-            }
-        })
+            },
+        });
         revalidateTag('todos');
     } catch (err) {
         const error = err as Error;
         console.error(error);
     }
-}
+};
 
 export default changeTodoState;
