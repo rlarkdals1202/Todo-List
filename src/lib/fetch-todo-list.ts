@@ -8,6 +8,7 @@ const fetchTodoList = async () => {
                 next: {
                     tags: ['todos'],
                 },
+                cache: 'no-store',
             })
             .json<Todo[]>();
         return todoList;
