@@ -10,7 +10,7 @@ import { revalidateTag } from 'next/cache';
  * 할 일을 생성하는 데 실패하였다면, 에러를 콘솔에 출력하고, 생성 실패 관련 객체를 반환합니다.
  *
  */
-const createTodo = async (_: any, formData: FormData) => {
+const createTodo = async (_: { status: string, error?: string} | null, formData: FormData) => {
     const todo = formData.get('todo')?.toString();
 
     if (!todo || todo.length === 0) {
