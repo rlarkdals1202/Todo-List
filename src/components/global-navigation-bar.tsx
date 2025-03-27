@@ -4,12 +4,12 @@ const GlobalNavigationBar = () => {
     return (
         <nav
             className={
-                'w-full h-full pt-[9.71px] pb-[10.29px] px-4 md:px-6 3xl:px-[20rem] border-box border-b border-slate-200 flex'
+                'flex h-full w-full border-b border-slate-200 px-4 pt-[9.71px] pb-[10.29px] md:px-6 lg:px-28 3xl:px-[360px]'
             }
         >
             <Link href='/'>
                 <div
-                    className={`w-[71px] h-[40px] bg-[url('/images/logo/logo-small.png')] md:bg-[url('/images/logo/logo-large.png')] md:w-[151px] bg-contain`}
+                    className={`h-[40px] w-[71px] bg-[url('/images/logo/logo-small.png')] bg-contain md:w-[151px] md:bg-[url('/images/logo/logo-large.png')]`}
                 />
             </Link>
         </nav>
