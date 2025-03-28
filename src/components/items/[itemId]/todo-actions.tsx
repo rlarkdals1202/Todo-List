@@ -43,7 +43,7 @@ const TodoActions = ({ todoInfo, isUpdateButtonActive }: Props) => {
         }
     };
     return (
-        <div className={'mt-6 flex justify-center gap-x-[7px] md:gap-x-2 lg:justify-end'}>
+        <div className={'mt-6 flex justify-center gap-x-[7px] md:gap-x-4 lg:justify-end'}>
             <Button
                 purpose={'updateTodo'}
                 className={'w-[164px]'}
