@@ -2,6 +2,8 @@
 
 **코드잇 스프린트 과제**<br>
 할 일 목록을 관리하는 To Do 서비스입니다.
+![image](https://github.com/user-attachments/assets/45db0416-e155-4c5f-b2a6-0cfa2fcfd23f)
+
 
 ## 1. 프로젝트 개요
 ### [ 1 ]. 개발 환경
@@ -20,7 +22,7 @@
 
 ### [ 2 ]. 시작 가이드
 #### 배포된 사이트에 접속
-- https://codeit-todo-list-kkang12s-projects.vercel.app/
+- [https://codeit-todo-list-ten.vercel.app](https://codeit-todo-list-ten.vercel.app/)
 
 #### 로컬에서 실행
 ```bash
@@ -51,7 +53,7 @@ pnpm dev
 ### [ 2 ]. 할 일 상세 페이지 ( `/items/{itemId}` )
 #### 할 일 수정
 - 할 일 항목을 클릭한 후, 항목 수정이 가능함.
-- 항목 이름을 수정할 수 있음.****
+- 항목 이름을 수정할 수 있음.
 - 할 일 상태(진행 / 완료)를 수정할 수 있음.
 - 메모를 추가할 수 있음.
 - 이미지를 최대 1개 첨부할 수 있음.
