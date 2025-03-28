@@ -13,7 +13,11 @@ const Page = async () => {
 
     return (
         <main className={'flex min-h-[calc(100dvh-3.75rem)] flex-1 flex-col bg-gray-50'}>
-            <div className={'mx-4 mt-4 flex flex-grow flex-col gap-y-6 md:mx-6 md:mt-6 md:gap-y-10 lg:mx-28 3xl:mx-[360px]'}>
+            <div
+                className={
+                    '3xl:mx-[18.75%] mx-4 mt-4 flex flex-grow flex-col gap-y-6 md:mx-6 md:mt-6 md:gap-y-10 lg:mx-36'
+                }
+            >
                 <AddTodoForm />
                 <div className={'flex flex-col gap-y-12 lg:flex-row lg:gap-x-6'}>
                     <div className={'w-full lg:w-1/2 lg:flex-col lg:gap-y-[4rem]'}>
