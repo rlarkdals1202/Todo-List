@@ -33,6 +33,11 @@ const TodoActions = ({ todoInfo, isUpdateButtonActive }: Props) => {
     };
 
     const handleUpdateTodoButtonClick = async () => {
+        if (todoInfo.name.trim() === '') {
+            window.alert('할 일 이름을 입력해주세요.');
+            return;
+        }
+
         if (window.confirm('정말 수정하시겠습니까?')) {
             const { status, message } = await updateTodo(todoInfo);
             if (status === 'success') {
