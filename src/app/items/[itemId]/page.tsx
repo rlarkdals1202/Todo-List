@@ -19,7 +19,7 @@ const Page = async ({ params }: Props) => {
         return (
             <main
                 className={
-                    '3xl:px-[360px] flex min-h-[calc(100dvh-3.75rem)] w-full flex-col items-center bg-gray-50 lg:px-28'
+                    '3xl:px-[18.75%] flex min-h-[calc(100dvh-3.75rem)] w-full flex-col items-center bg-gray-50 lg:px-36'
                 }
             >
                 <TodoInfo
