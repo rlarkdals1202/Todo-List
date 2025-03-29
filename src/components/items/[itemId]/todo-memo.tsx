@@ -1,11 +1,11 @@
 'use client';
 
-import { ChangeEvent } from 'react';
+import { ChangeEventHandler } from 'react';
 import TextareaAutosize from 'react-textarea-autosize';
 
 interface Props {
     memo: string;
-    onMemoChange: (e: ChangeEvent<HTMLTextAreaElement>) => void;
+    onMemoChange: ChangeEventHandler<HTMLTextAreaElement>;
 }
 
 /**
