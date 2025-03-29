@@ -5,7 +5,7 @@ import TodoList from '@/components/home/todo-list';
 import fetchTodoList from '@/lib/fetch-todo-list';
 
 /**
- * 메인 페이지 컴포넌트입니다.
+ * 할 일 목록 페이지 컴포넌트입니다.
  */
 const Page = async () => {
     // 서버로부터 할 일 목록을 가져옵니다.
