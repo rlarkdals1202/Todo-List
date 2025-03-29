@@ -82,7 +82,7 @@ pnpm dev
 #### 할 일 삭제
 - 삭제하기 버튼을 클릭하면 할 일 삭제가 가능하며, 삭제 후 할 일 목록 페이지로 이동
 
-![화면 기록 2025-03-29 오후 6 31 11](https://github.com/user-attachments/assets/edae5f09-1dd7-46c0-b05f-6026654f7bfb)
+![화면 기록 2025-03-30 오전 2 14 20](https://github.com/user-attachments/assets/9357110f-1bf4-4ca7-9fe2-b68780e0e07c)
 
 
 <br/>
