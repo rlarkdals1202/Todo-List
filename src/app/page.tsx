@@ -34,7 +34,7 @@ const Page = async () => {
                         )}
                     </div>
                     <div className={'w-full lg:w-1/2 lg:flex-col lg:gap-y-[4rem]'}>
-                        <Image src={'/images/text/done.png'} alt={'done-text'} width={101} height={36} />
+                        <Image src={'/images/text/done.png'} alt={'done-text'} width={97} height={36} />
                         {todoList.filter(todo => todo.isCompleted).length === 0 ? (
                             <EmptyListMessage listType={'done'}>
                                 <p className={'text-center font-bold text-slate-400'}>
