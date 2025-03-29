@@ -7,15 +7,15 @@
 
 ## 1. 프로젝트 개요
 ### [ 1 ]. 개발 환경
-#### 프론트 엔드 개발 `HTML5, CSS3, TypeScript, React, Next.js, tailwind css`
+#### 프론트엔드 개발 : `HTML5, CSS3, TypeScript, React, Next.js, tailwind css`
 [![FrontEnd Skill](https://skillicons.dev/icons?i=html,css,ts,react,nextjs,tailwind)](https://skillicons.dev)
 
 
-#### 버전 관리 `git, github`
+#### 버전 관리 : `git, github`
 [![Version Control](https://skillicons.dev/icons?i=git,github)](https://skillicons.dev)
 
 
-#### 배포 `Vercel`
+#### 배포 : `Vercel`
 [![My Tech Stacks](https://skillicons.dev/icons?i=vercel)](https://skillicons.dev)
 
 <br/>
@@ -89,7 +89,7 @@ pnpm dev
 
 ## 3. 폴더 설명
 
-- **`src/action` 폴더**<br/>
+- **`src/actions` 폴더**<br/>
   -> 서버 액션 함수 파일들을 모아놓은 폴더
 
 <br>
