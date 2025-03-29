@@ -3,7 +3,7 @@
 import { ChangeEventHandler } from 'react';
 
 /**
- * 새로운 할 일을 입력하기 위한 Input 컴포넌트의 props 타입입니다.
+ * 새로운 할 일을 입력하기 위한 TodoInput 컴포넌트의 props 타입입니다.
  */
 interface Props {
     value: string;
@@ -11,7 +11,7 @@ interface Props {
 }
 
 /**
- * 새로운 할 일을 입력하기 위한 Input 컴포넌트입니다.
+ * 새로운 할 일을 입력하기 위한 TodoInput 컴포넌트입니다.
  */
 const TodoInput = ({ value, onInputChange }: Props) => {
     return (

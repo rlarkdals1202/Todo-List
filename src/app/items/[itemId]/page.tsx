@@ -7,7 +7,9 @@ interface Props {
     }>;
 }
 
-// 할 일 상세 페이지 컴포넌트
+/**
+ * 할 일 상세 페이지 컴포넌트입니다.
+ */
 const Page = async ({ params }: Props) => {
     const { itemId } = await params;
 

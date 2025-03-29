@@ -45,7 +45,7 @@ const ImageEditor = ({ imageUrl, updateImageUrl }: Props) => {
             return;
         }
 
-        // 이미지 파일을 업로드하고, 결과를 가져옵니다.
+        // 이미지 업로드 관련 함수를 호출하고, 결과를 가져옵니다.
         const { status, imageUrl } = await uploadImageFile(file);
 
         if (status === 'error') {
