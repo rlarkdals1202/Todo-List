@@ -22,31 +22,15 @@ interface Props {
  *
  * 메인 페이지에서 할 일 목록 아이템들을 보여줄 때 사용됩니다.
  * 메인 페이지에서는 항목 이름을 수정할 수 없으므로, 단순 텍스트만 보여줍니다.
- * 
+ *
  * 할 일 상세 페이지에서 할 일 목록 아이템을 보여줄 때 사용됩니다.
  * 할 일 상세 페이지에서는 항목 이름을 수정할 수 있으므로, AutosizeInput 컴포넌트를 사용해서
  * 사용자가 항목 이름을 수정할 수 있도록 합니다.
- * 
+ *
  */
-const TodoListItem = ({
-    isCompleted,
-    name,
-    className,
-    isNameEditable,
-    onNameChange,
-    onToggleButtonClick,
-}: Props) => {
+const TodoListItem = ({ isCompleted, name, className, isNameEditable, onNameChange, onToggleButtonClick }: Props) => {
     return (
-        <div
-            className={cn(
-                `flex items-center gap-x-4 border-2 border-slate-900`,
-                {
-                    'bg-violet-100': isCompleted,
-                    'bg-white': !isCompleted,
-                },
-                className,
-            )}
-        >
+        <div className={cn(`flex items-center gap-x-4 border-2 border-slate-900`, className)}>
             <button className={'cursor-pointer'} type={'button'} onClick={onToggleButtonClick}>
                 <Image
                     src={`${isCompleted ? '/icons/checked.svg' : '/icons/not-checked.svg'}`}
@@ -57,7 +41,7 @@ const TodoListItem = ({
             </button>
             {isNameEditable ? (
                 <AutosizeInput
-                    inputClassName={`text-slate-800 max-w-[250px] focus:outline-none underline-offset-2 underline`}
+                    inputClassName={`text-slate-800 max-w-[250px] focus:outline-none underline-offset-2 underline decoration-1`}
                     value={name}
                     onChange={onNameChange}
                 />

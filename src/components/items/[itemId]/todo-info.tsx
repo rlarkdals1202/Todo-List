@@ -6,6 +6,7 @@ import TodoListItem from '@/components/common/todo-list-item';
 import ImageEditor from '@/components/items/[itemId]/image-editor';
 import TodoMemo from '@/components/items/[itemId]/todo-memo';
 import TodoActions from '@/components/items/[itemId]/todo-actions';
+import cn from '@/utils/cn';
 
 interface Props {
     todoInfo: TodoInfo;
@@ -59,7 +60,10 @@ const TodoInfo = ({ todoInfo }: Props) => {
     return (
         <div className={'3xl:px-[102px] w-full flex-grow bg-white px-4 py-4 md:px-6 md:py-6 lg:px-9'}>
             <TodoListItem
-                className={'h-16 justify-center rounded-[24px] border-2 border-slate-900 text-[20px] font-bold'}
+                className={cn('h-16 justify-center rounded-[24px] border-2 border-slate-900 text-[20px] font-bold', {
+                    'bg-violet-200': currentTodoInfo.isCompleted,
+                    'bg-white': !currentTodoInfo.isCompleted,
+                })}
                 name={currentTodoInfo.name}
                 isCompleted={currentTodoInfo.isCompleted}
                 isNameEditable={true}
